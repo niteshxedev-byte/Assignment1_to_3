@@ -3,65 +3,112 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Assignment_1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1 — Student Registration Form</title>
+    <meta name="description" content="Student Registration Form — MERN Stack Assignment 1">
+ 
 </head>
 
 <body>
-    <h3>Q1. Create a Student Registration Form
 
-        Build a form that includes:
+    <!-- Question Description -->
+    <div class="question-card">
+        <h3><strong>Q1.</strong> Create a Student Registration Form that includes:</h3>
+        <ul>
+            <li>Full Name</li>
+            <li>Email</li>
+            <li>Password</li>
+            <li>Gender (Radio Buttons)</li>
+            <li>Hobbies (Checkboxes)</li>
+            <li>Date of Birth</li>
+            <li>Submit Button</li>
+        </ul>
+    </div>
 
-        Full Name
-        Email
-        Password
-        Gender (Radio Buttons)
-        Hobbies (Checkboxes)
-        Date of Birth
-        Submit Button </h3>
+    <!-- Registration Form -->
+    <div class="form-card">
+        <h2>Student Registration Form</h2>
+        <p class="subtitle">Fill in your details below to register</p>
 
-    <h2>Student Registration Form</h2>
+        <form action="" method="POST" id="registration-form">
 
-    <form action="">
-        <div>
-            <label for="name">Name</label>
-            <input type="text" id="name">
-        </div>
+            <!-- Full Name -->
+            <div class="field-group">
+                <label for="fullName" class="field-label">Full Name</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            </div>
 
-        <div >
-            <label for="Email">Email:</label>
-            <input type="email" id="Email">
-        </div>
-        <div >
-            <label for="Password">Password:</label>
-            <input type="Password" id="Password">
-        </div>
-        <div>
-            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-  <label for="vehicle1"> I have a bike</label><br>
-  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-  <label for="vehicle2"> I have a car</label><br>
-  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-  <label for="vehicle3"> I have a boat</label><br><br>
-        </div>
-         <div >
-            <label for="gender">Gender:</label>
-            <label for="male"> Male
-            <input type="radio" id="male" name="male" value="male" form="">
-            </label>
-             <label for="femail"> femail
-            <input type="radio" id="femail" value="femail" name="femail" form="">
-            </label>
-        </div>
+            <!-- Email -->
+            <div class="field-group">
+                <label for="email" class="field-label">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
 
-<label for="date">Enter Date</label>
-<input type="date" name="date" id="">
+            <!-- Password -->
+            <div class="field-group">
+                <label for="password" class="field-label">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create a strong password" required>
+            </div>
 
-<input type="submit" name="submit form" id="">
+            <!-- Gender (Radio Buttons) -->
+            <div class="field-group">
+                <label class="field-label">Gender</label>
+                <div class="inline-options">
+                    <label for="male">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        Male
+                    </label>
+                    <label for="female">
+                        <input type="radio" id="female" name="gender" value="female">
+                        Female
+                    </label>
+                    <label for="other">
+                        <input type="radio" id="other" name="gender" value="other">
+                        Other
+                    </label>
+                </div>
+            </div>
 
+            <!-- Hobbies (Checkboxes) -->
+            <div class="field-group">
+                <label class="field-label">Hobbies</label>
+                <div class="inline-options">
+                    <label for="hobby-reading">
+                        <input type="checkbox" id="hobby-reading" name="hobbies" value="reading">
+                        Reading
+                    </label>
+                    <label for="hobby-sports">
+                        <input type="checkbox" id="hobby-sports" name="hobbies" value="sports">
+                        Sports
+                    </label>
+                    <label for="hobby-music">
+                        <input type="checkbox" id="hobby-music" name="hobbies" value="music">
+                        Music
+                    </label>
+                    <label for="hobby-coding">
+                        <input type="checkbox" id="hobby-coding" name="hobbies" value="coding">
+                        Coding
+                    </label>
+                    <label for="hobby-traveling">
+                        <input type="checkbox" id="hobby-traveling" name="hobbies" value="traveling">
+                        Traveling
+                    </label>
+                </div>
+            </div>
 
-    </form>
+            <!-- Date of Birth -->
+            <div class="field-group">
+                <label for="dob" class="field-label">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
 
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn" id="submit-btn">Register</button>
+
+        </form>
+    </div>
+
+    <a href="./index.html" class="back-link">← Back to Home</a>
 
 </body>
 
