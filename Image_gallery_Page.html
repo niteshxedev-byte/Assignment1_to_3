@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image_gallery_Page</title><link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/locomotive-scroll/bundled/locomotive-scroll.css"
+/>
+    <style>
+         *{
+        margin: 0;padding: 0;box-sizing: border-box;
+    }
+        .div1,.div2,.div3,.div4{
+            width: 100vw;
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+            border: 2px solid black;
+            background-color: red;
+            background-repeat: no-repeat;
+        }
+        .div1{
+           background-image: url("https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1244&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        }
+        .div2{
+            background-image: url("https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=1256&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        }
+        .div3{
+            background-image: url("https://plus.unsplash.com/premium_photo-1682656220562-32fde8256295?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        }
+        .div4{
+            background-image: url("https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        }
+    </style>
+</head>
+<body>
+    <a style="text-decoration: none" href=""><div class="div1">
+        <div style="width: 100%; align-items: center;
+        position: fixed;
+        justify-content: center;
+        display: flex;
+        background-color: white;
+        height: 10vh; color: black;" class="headings">Locomotive js</div>
+    </div></a>
+     <a href=""><div class="div2"></div></a>
+      <a href=""><div class="div3"></div></a>
+       <a href=""><div class="div4"></div></a>
+    
+        
+       <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/bundled/locomotive-scroll.min.js"></script>
+<script>
+    const locomotiveScroll = new LocomotiveScroll();
+</script>
+</body>
+</html>
